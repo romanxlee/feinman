@@ -1,0 +1,500 @@
+@keyframes rotation {
+    from {
+        transform: rotate(-15deg);
+    }
+    
+    to {
+        transform: rotate(345deg);
+    }
+}
+
+.page {
+    min-width: 1100px;
+    /* мы ещё не умеем делать мобильную версию сайта, */
+    /* поэтому выше установлена минимальная ширина страницы */
+    max-width: 1600px;
+    /* выше установили ограничение по максимальной ширине */
+    margin: 0 auto;
+    /* выше для экранов больше 1600px отцентрировали весь контент */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    /* выше установили ограничения для секции */
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+    max-width: 200px;
+    color: white;
+    margin-right: 0;
+    margin-top: 80px;
+    z-index: 2;
+}
+
+.logo_place_header {
+    width: 183px;
+    height: 32px;
+    position: absolute;
+    top: 30px;
+    left: 64px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/logo.svg);
+    
+}
+
+.header__subtitle {
+    position: absolute;
+    bottom: 30px;
+    left: 64px;
+    width: 388px;
+    z-index: 1;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header__main-illustration {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 765px;
+    height: 608px;
+    background-image: url(../images/two_again.png);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.header__square-pic {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 568px;
+    height: 568px;
+    background-color: #2f80ed;
+    transform: rotate(-15deg);
+    animation: rotation 20s infinite linear;
+}
+
+.header__title {
+    width: 730px;
+    margin-left: 64px;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: 700;
+}
+
+.header__link {
+    color: #2f80ed;
+    text-decoration: none;
+    transition: opacity ease 0.4s;
+}
+
+.header__link:hover {
+    opacity: 0.6;
+}
+
+.description {
+    padding: 100px 0 100px;
+}
+
+.two-columns {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.two-columns__brief {
+    width: 175px;
+    line-height: 1.2;
+    font-size: 18px;
+    color: #2f80ed;
+    font-weight: 400;
+}
+
+.two-columns__main-text {
+    width: 80%;
+    min-width: 784px;
+}
+
+.two-columns__paragraph {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-child {
+   margin-bottom: 0;
+}
+
+.two-columns__span-accent {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.two-columns__margin {
+    margin-bottom: 30px;
+}
+
+.digits {
+    padding: 100px 0 100px;
+    margin: auto;
+}
+
+.section-title {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.table {
+    width: 1100px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.table__cell {
+    width: 250px;
+    margin-top: 60px;
+}
+
+.table__heading {
+    margin: 0 auto;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.table__text {
+    margin-top: 20px;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.feinman {
+    position: relative;
+    padding-top: 80px;
+    height: 790px;
+    background-position: bottom left;
+    background-image: url(../images/feinman.png);
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+}
+
+.feinman__title {
+    margin: auto;
+    width: 648px;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+.feinman__subtitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.feinman__link {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    color: black;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: opacity ease 0.4s;
+}
+
+.feinman__link:hover {
+    opacity: 0.6;
+}
+
+.kaufman {
+    position: relative;
+    background-color: #1f1f1f;
+    padding: 90px 0 90px;
+    overflow: hidden;
+}
+
+.section-title_theme_dark {
+    color: #fff;
+}
+
+.section-subtitle_theme_dark {
+    color: #fff;
+}
+
+
+
+.table__heading_theme_dark {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.table__text_theme_dark {
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.kaufman__triangle {
+    position: absolute;
+    top: 0;
+    right: -210px;
+    background-image: url(../images/triangle.svg);
+    background-position: center;
+    background-size: cover;
+    width: 877px;
+    height: 877px;
+    animation: rotation 20s infinite linear;
+}
+
+.footer {
+    padding: 60px 0 40px;
+    background-color: #1f1f1f;
+}
+
+.footer__columns {
+    display: flex;
+    margin: auto;
+    color: #fff;
+    justify-content: space-around;
+    min-height: 350px;
+}
+
+.logo_place_footer {
+    width: 183px;
+    height: 35px;
+    background-image: url(../images/logo_white.svg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer__column_content_copyright {
+    position: relative;
+    display: flex;
+    flex-basis: 711px;
+}
+
+.footer__author {
+    position: absolute;
+    display: flex;
+    bottom: 18px;
+    left: 0;
+}
+
+.footer__column-heading {
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer__column-links {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__column-link {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity ease 0.4s;
+}
+
+.footer__column-link:hover {
+    opacity: 0.6;
+}
+
+.cards {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 40% 40% 40%;
+}
+
+.cards__item {
+    margin-top: 60px;
+    width: 240px;
+    text-align: center;
+}
+
+.cards__image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 0 40px 0;
+}
+
+.cards__title {
+    margin: 43px 0 16px;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cards__description {
+    line-height: 23px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.video {
+    padding-top: 100px;
+    position: relative;
+}
+
+.video__iframes {
+    margin: 50px auto -50px;
+    text-align: center;
+}
+
+.video__iframe {
+    margin-right: 20px;
+    width: 515px;
+    height: 316px;
+}
+
+.oakley {
+    padding-top: 160px;
+    background-color: #f2f2f2;
+}
+
+.khan {
+    padding-top: 105px;
+    background-color: #f2f2f2;
+}
+
+.khan__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.khan__author {
+    margin: 0;
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.khan__title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.khan__quote {
+    margin: 50px 0 36px;
+    width: 790px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.khan__quote-author {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.khan__quote-author-subline {
+    margin: 10px 0 68px;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.khan__book-container {
+}
+
+.khan__book-pic {
+    width: 620px;
+    height: 608px;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 20px;
+    padding-bottom: 0;
+}
+
+.khan__buy-link {
+    vertical-align: top;
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #2f80ed;
+    transition: opacity ease 0.4s;
+}
+
+.khan__buy-link:hover {
+    opacity: 0.6;
+}
+
+.resources {
+    padding: 100px 0 217px;
+}
+
+.resources__logo-zone {
+    margin: 80px auto 0;
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.resources__logo {
+    text-align: center;
+    transition: opacity ease 0.4s;
+}
+
+.resources__logo:hover {
+    opacity: 0.6;
+}
